@@ -1,0 +1,48 @@
+@charset "UTF-8";
+body {
+  background: #DEFFDE;
+}
+
+.introduce {
+  background: #FFF2F2;
+  border-radius: 2em;
+}
+
+.introduce img {
+  border-radius: 2em;
+}
+
+.pic {
+  width: 370px;
+  height: 370px;
+  overflow: hidden;
+}
+
+.pic img {
+  -webkit-transform: scale(1, 1);
+          transform: scale(1, 1);
+  -webkit-transition: all 1s ease-out;
+  transition: all 1s ease-out;
+}
+
+.pic img:hover {
+  -webkit-transform: scale(1.2, 1.2);
+          transform: scale(1.2, 1.2);
+}
+
+.pics {
+  position: relative;
+}
+
+.pics img {
+  position: absolute;
+  /* 淡出淡入效果2秒 */
+  -webkit-transition: opacity 1s ease-in-out;
+  transition: opacity 1s ease-in-out;
+}
+
+.pics img:last-child:hover {
+  /* 滑入時第一張透明度設0 */
+  opacity: 0;
+}
+/*# sourceMappingURL=styles.css.map */
